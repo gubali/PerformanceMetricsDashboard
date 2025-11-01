@@ -1,0 +1,7 @@
+<div class="dashboard">
+  <app-form (add)="addEmployee($event)"></app-form>
+  <div class="card-grid">
+    <app-card *ngFor="let emp of employees()" [employee]="emp"></app-card>
+  </div>
+  <app-chart [data]="employees()"></app-chart>
+</div>

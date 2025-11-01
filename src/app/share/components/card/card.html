@@ -1,0 +1,10 @@
+<div class="card">
+  <h4>{{ employee.name }}</h4>
+  <p>{{ employee.department }}</p>
+  <div>Performance: {{ employee.performance }}%</div>
+  <span class="rating {{ employee.rating | lowercase }}">{{ employee.rating }}</span>
+  <div class="" style="display: flex">
+    <a href="javascript:void(0)" (click)="getEmpDataById(employee.id ?? 0)">Edit</a> &nbsp;
+    <a href="">Delete</a>
+  </div>
+</div>

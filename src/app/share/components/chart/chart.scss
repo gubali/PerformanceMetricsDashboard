@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+
+  input,
+  select {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+  }
+
+  button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+}

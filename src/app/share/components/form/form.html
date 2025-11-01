@@ -1,0 +1,64 @@
+<form
+  [formGroup]="empForm"
+  (ngSubmit)="addUser()"
+  class="employee-form container p-4 shadow-sm rounded-3 bg-white mt-3"
+>
+  <div class="row g-3">
+    <!-- Name -->
+    <div class="col-md-6">
+      <label for="name" class="form-label fw-semibold">Name</label>
+      <input
+        id="name"
+        type="text"
+        class="form-control"
+        formControlName="name"
+        placeholder="Enter employee name"
+      />
+    </div>
+
+    <!-- Department -->
+    <div class="col-md-6">
+      <label for="department" class="form-label fw-semibold">Department</label>
+      <input
+        id="department"
+        type="text"
+        class="form-control"
+        formControlName="department"
+        placeholder="Enter department"
+      />
+    </div>
+
+    <!-- Performance -->
+    <div class="col-md-6">
+      <label for="performance" class="form-label fw-semibold">Performance (%)</label>
+      <input
+        id="performance"
+        type="number"
+        class="form-control"
+        formControlName="performance"
+        placeholder="Enter performance score"
+        min="0"
+        max="100"
+      />
+    </div>
+
+    <!-- Rating -->
+    <div class="col-md-6">
+      <label for="rating" class="form-label fw-semibold">Rating</label>
+      <select id="rating" class="form-select" formControlName="rating">
+        <option value="">Select Rating</option>
+        <option>Excellent</option>
+        <option>Good</option>
+        <option>Average</option>
+        <option>Poor</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Submit Button -->
+  <div class="text-center mt-4">
+    <button type="submit" class="btn btn-primary px-4 py-2" [disabled]="empForm.invalid">
+      Add Employee
+    </button>
+  </div>
+</form>

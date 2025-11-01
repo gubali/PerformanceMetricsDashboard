@@ -1,0 +1,23 @@
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: 1.6;
+  color: $color-text-dark;
+  background: $color-bg-light;
+}
+
+h1,
+h2,
+h3 {
+  color: $color-primary;
+  font-weight: 600;
+  margin-bottom: $spacing-sm;
+}
+
+p {
+  margin-bottom: $spacing-md;
+}
+
+.text-center {
+  text-align: center;
+}

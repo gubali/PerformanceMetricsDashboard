@@ -1,0 +1,57 @@
+.card {
+  @include card;
+  background-color: var(--card-bg);
+
+  h3 {
+    color: $color-primary;
+    margin-bottom: $spacing-sm;
+  }
+
+  p {
+    color: $color-text-dark;
+    font-size: $font-size-sm;
+  }
+}
+
+button {
+  background: $color-primary;
+  color: #fff;
+  border: none;
+  padding: $spacing-sm $spacing-md;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: darken($color-primary, 10%);
+  }
+
+  &.secondary {
+    background: $color-accent;
+  }
+
+  &.error {
+    background: $color-error;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+  background: var(--card-bg);
+  padding: $spacing-lg;
+  border-radius: $border-radius;
+
+  input,
+  select {
+    padding: $spacing-sm;
+    border: 1px solid #ccc;
+    border-radius: $border-radius;
+  }
+
+  .error {
+    color: $color-error;
+    font-size: $font-size-sm;
+  }
+}

@@ -1,0 +1,22 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $spacing-lg;
+}
+
+.grid {
+  @include responsive-grid(280px);
+}
+
+header,
+footer {
+  background: $color-primary;
+  color: white;
+  padding: $spacing-md;
+  text-align: center;
+}
+
+footer {
+  font-size: $font-size-sm;
+  opacity: 0.8;
+}

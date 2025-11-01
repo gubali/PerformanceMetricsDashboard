@@ -1,0 +1,19 @@
+<div class="container mt-4">
+  <div class="row">
+    <!-- Bar Chart -->
+    <div class="col-lg-6 col-md-12 mb-4">
+      <div class="card p-3 shadow-sm">
+        <h5 class="text-center">Bar Chart</h5>
+        <canvas baseChart [data]="chartData" [options]="chartOptions" [type]="barType"> </canvas>
+      </div>
+    </div>
+
+    <!-- Pie Chart -->
+    <div class="col-lg-6 col-md-12 mb-4">
+      <div class="card p-3 shadow-sm">
+        <h5 class="text-center">Pie Chart</h5>
+        <canvas baseChart [data]="chartData" [options]="chartOptions" [type]="pieType"> </canvas>
+      </div>
+    </div>
+  </div>
+</div>
